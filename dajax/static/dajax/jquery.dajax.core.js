@@ -56,7 +56,15 @@ var Dajax = {
             case 'rm':
                 $(elem.id).remove();
             break;
+            
+            case 'aft':
+                $(elem.id).after(elem.val);
+            break;
 
+	        case 'bef':
+                $(elem.id).before(elem.val);
+            break;
+            
             default:
             break;
             }
