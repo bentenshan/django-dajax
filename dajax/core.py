@@ -45,3 +45,9 @@ class Dajax(object):
 
     def add_data(self, data, function):
         self.calls.append({'cmd': 'data', 'val': data, 'fun': function})
+    
+    def after(self, id, value):
+        self.calls.append({'cmd': 'aft', 'id': id, 'val': value})
+
+    def before(self, id, value):
+        self.calls.append({'cmd': 'bef', 'id': id, 'val': value})
